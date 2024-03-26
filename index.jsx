@@ -16,24 +16,13 @@ export default function Home(){
                 👸🏼
                 </Text>
             </TouchableOpacity>
-
                 <TextInput style = {estilos.input_text}/>
-
-               <TouchableOpacity style = {estilos.botao}>
+            <TouchableOpacity style = {estilos.botao}>
                 <Text style = {estilos.texto_botao}>
                 🔎
                 </Text>
                </TouchableOpacity>
             </View>
-
-            <FlatList 
-                data={lista}
-                keyExtractor={item => item}
-                renderItem={({item})=>(
-                    <Card key={item} name={item} />
-                )}
-                showsVerticalScrollIndicador={false}
-            />
         </View>
         )
     }
